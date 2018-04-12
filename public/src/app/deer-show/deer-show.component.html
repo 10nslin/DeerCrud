@@ -1,0 +1,16 @@
+
+
+<table *ngIf='deer'>
+  <tr>
+    <th>Edit</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td><a [routerLink] = "['/deer', deer.deer._id, 'edit']"> Edit </a></td>
+    <td>{{deer.deer.name}}</td>
+    <td>{{deer.deer.age}}</td>
+    <td>{{deer.deer.gender}}</td>
+  </tr>
+</table>

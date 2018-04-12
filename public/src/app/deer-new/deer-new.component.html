@@ -1,0 +1,8 @@
+
+<h2>Create A New Deer</h2>
+<form (submit)= 'addDeer()'>
+  <p>Name: <input type="text" name="name" [(ngModel)] ='deer.name'> </p>
+  <p>Age: <input type="number" name="age" [(ngModel)] ='deer.age'></p>
+  <p>Gender: Male<input type="radio" name="gender" value="M" [(ngModel)] ='deer.gender'> Female<input type="radio" name="gender" value="F" [(ngModel)] ='deer.gender'></p>
+  <input type="submit" value="Add Deer">
+</form>
